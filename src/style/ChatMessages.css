@@ -1,0 +1,71 @@
+/* Chat messages container */
+.chat-messages-container {
+    flex-grow: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+/* Each message row */
+.chat-message-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* USER message alignment (right side) */
+.chat-message-container:has(.user-image) {
+    justify-content: flex-end;
+}
+
+/* ROBOT message alignment (left side) */
+.chat-message-container:has(.robot-image) {
+    justify-content: flex-start;
+}
+
+/* Message bubble */
+.message {
+    max-width: 60%;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Robot bubble */
+.chat-message-container:has(.robot-image) .message {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* User bubble */
+.chat-message-container:has(.user-image) .message {
+    background-color: #e6e6e6;
+    color: #000;
+}
+
+/* Avatar images */
+.robot-image,
+.user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.initial-message {
+    color: #595757;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.loader{
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+}

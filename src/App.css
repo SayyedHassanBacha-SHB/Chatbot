@@ -1,0 +1,11 @@
+/* Main app */
+.app-container {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
