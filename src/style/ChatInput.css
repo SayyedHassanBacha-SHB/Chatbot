@@ -32,3 +32,12 @@
 .send-button:hover {
     opacity: 0.9;
 }
+
+.clear-button{
+    background-color: #e6e6e6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+}

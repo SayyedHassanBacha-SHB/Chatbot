@@ -42,10 +42,17 @@ export function ChatInput({chatMessages, setChatMessages, isLoading, setIsLoadin
       setInputText("");
     }
   }
+
+  function clearInput(){
+    setInputText("");
+    setChatMessages([]);
+  }
   return (
     <div className="chat-input-container" >
       <input ref={chatInputText} className="input-text" type="text" placeholder="Send a message to chatbot" onChange={saveInputText}  value={inputText} onKeyDown={pressEnter} disabled={isLoading} />
       <button className="send-button" onClick={sendMessage} >Send</button>
+      <button className="clear-button" onClick={clearInput} >Clear</button>
+
     </div>
     )
 };

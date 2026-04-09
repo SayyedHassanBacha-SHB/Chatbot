@@ -37,6 +37,10 @@
     line-height: 1.4;
 }
 
+.message-time {
+    font-size: 10px;
+}
+
 /* Robot bubble */
 .chat-message-container:has(.robot-image) .message {
     background-color: #f1f1f1;
